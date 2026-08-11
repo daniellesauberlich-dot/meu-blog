@@ -53,8 +53,14 @@
     </main>
 </body>
 <script>
-    const botao = document.querySelectorAll("button");
-    botao.addEventListener("click", botaoClicado);
+    const botoes = document.querySelectorAll("button");
+    
+    botoes.forEach( funcion(botao){
+        botao.addEventListener("click", botaoClicado);
+
+    }
+
+    )
 
     function botaoClicado(){
        console.log("fui clicado");
